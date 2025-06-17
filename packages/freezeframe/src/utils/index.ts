@@ -30,7 +30,7 @@ export const parseFilename = (filePath: string): string => {
 
 export const validateFilename = (filePath: string): boolean => {
   const ext = parseFilename(filePath);
-  return ext === 'gif';
+  return ext === 'gif' || ext === 'webp';
 };
 
 export const normalizeElements = (selectorOrNodes: SelectorOrNodes) => {

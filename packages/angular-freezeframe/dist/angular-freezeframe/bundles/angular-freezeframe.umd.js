@@ -1,11 +1,30 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('freezeframe')) :
   typeof define === 'function' && define.amd ? define('angular-freezeframe', ['exports', '@angular/core', 'freezeframe'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['angular-freezeframe'] = {}, global.ng.core, global.Freezeframe));
-}(this, (function (exports, i0, Freezeframe) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["angular-freezeframe"] = {}, global.ng.core, global.Freezeframe));
+})(this, (function (exports, i0, Freezeframe) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
+  function _interopNamespace(e) {
+    if (e && e.__esModule) return e;
+    var n = Object.create(null);
+    if (e) {
+      Object.keys(e).forEach(function (k) {
+        if (k !== 'default') {
+          var d = Object.getOwnPropertyDescriptor(e, k);
+          Object.defineProperty(n, k, d.get ? d : {
+            enumerable: true,
+            get: function () { return e[k]; }
+          });
+        }
+      });
+    }
+    n["default"] = e;
+    return Object.freeze(n);
+  }
+
+  var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
   var Freezeframe__default = /*#__PURE__*/_interopDefaultLegacy(Freezeframe);
 
   /* eslint-disable @angular-eslint/component-selector */
@@ -13,14 +32,14 @@
   var _c1 = ["slotRef"];
   function AngularFreezeframeComponent_div_1_Template(rf, ctx) {
       if (rf & 1) {
-          i0.ɵɵelementStart(0, "div");
-          i0.ɵɵelement(1, "img", 3, 4);
-          i0.ɵɵelementEnd();
+          i0__namespace.ɵɵelementStart(0, "div");
+          i0__namespace.ɵɵelement(1, "img", 3, 4);
+          i0__namespace.ɵɵelementEnd();
       }
       if (rf & 2) {
-          var ctx_r0 = i0.ɵɵnextContext();
-          i0.ɵɵadvance(1);
-          i0.ɵɵpropertyInterpolate("src", ctx_r0.src, i0.ɵɵsanitizeUrl);
+          var ctx_r0 = i0__namespace.ɵɵnextContext();
+          i0__namespace.ɵɵadvance(1);
+          i0__namespace.ɵɵpropertyInterpolate("src", ctx_r0.src, i0__namespace.ɵɵsanitizeUrl);
       }
   }
   var _c2 = ["*"];
@@ -42,7 +61,7 @@
           var target = this.slotIsEmpty && this.src
               ? this.freezeRef.nativeElement
               : this.slotRef.nativeElement;
-          this.$freezeframe = new Freezeframe__default['default'](target, this.options);
+          this.$freezeframe = new Freezeframe__default["default"](target, this.options);
           this.initEventListeners();
       };
       AngularFreezeframeComponent.prototype.initEventListeners = function () {
@@ -85,34 +104,34 @@
       return AngularFreezeframeComponent;
   }());
   AngularFreezeframeComponent.ɵfac = function AngularFreezeframeComponent_Factory(t) { return new (t || AngularFreezeframeComponent)(); };
-  AngularFreezeframeComponent.ɵcmp = i0.ɵɵdefineComponent({ type: AngularFreezeframeComponent, selectors: [["angular-freezeframe"]], viewQuery: function AngularFreezeframeComponent_Query(rf, ctx) {
+  AngularFreezeframeComponent.ɵcmp = /*@__PURE__*/ i0__namespace.ɵɵdefineComponent({ type: AngularFreezeframeComponent, selectors: [["angular-freezeframe"]], viewQuery: function AngularFreezeframeComponent_Query(rf, ctx) {
           if (rf & 1) {
-              i0.ɵɵviewQuery(_c0, 1);
-              i0.ɵɵviewQuery(_c1, 1);
+              i0__namespace.ɵɵviewQuery(_c0, 5);
+              i0__namespace.ɵɵviewQuery(_c1, 5);
           }
           if (rf & 2) {
               var _t = void 0;
-              i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.freezeRef = _t.first);
-              i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.slotRef = _t.first);
+              i0__namespace.ɵɵqueryRefresh(_t = i0__namespace.ɵɵloadQuery()) && (ctx.freezeRef = _t.first);
+              i0__namespace.ɵɵqueryRefresh(_t = i0__namespace.ɵɵloadQuery()) && (ctx.slotRef = _t.first);
           }
       }, inputs: { src: "src", options: "options" }, outputs: { startEvent: "startEvent", stopEvent: "stopEvent", toggleEvent: "toggleEvent" }, ngContentSelectors: _c2, decls: 5, vars: 1, consts: [[1, "angular-freezeframe"], [4, "ngIf"], ["slotRef", ""], [3, "src"], ["freezeRef", ""]], template: function AngularFreezeframeComponent_Template(rf, ctx) {
           if (rf & 1) {
-              i0.ɵɵprojectionDef();
-              i0.ɵɵelementStart(0, "div", 0);
-              i0.ɵɵtemplate(1, AngularFreezeframeComponent_div_1_Template, 3, 1, "div", 1);
-              i0.ɵɵelementStart(2, "div", null, 2);
-              i0.ɵɵprojection(4);
-              i0.ɵɵelementEnd();
-              i0.ɵɵelementEnd();
+              i0__namespace.ɵɵprojectionDef();
+              i0__namespace.ɵɵelementStart(0, "div", 0);
+              i0__namespace.ɵɵtemplate(1, AngularFreezeframeComponent_div_1_Template, 3, 1, "div", 1);
+              i0__namespace.ɵɵelementStart(2, "div", null, 2);
+              i0__namespace.ɵɵprojection(4);
+              i0__namespace.ɵɵelementEnd();
+              i0__namespace.ɵɵelementEnd();
           }
           if (rf & 2) {
-              var _r1 = i0.ɵɵreference(3);
-              i0.ɵɵadvance(1);
-              i0.ɵɵproperty("ngIf", !_r1.innerHTML.trim());
+              var _r1 = i0__namespace.ɵɵreference(3);
+              i0__namespace.ɵɵadvance(1);
+              i0__namespace.ɵɵproperty("ngIf", !_r1.innerHTML.trim());
           }
       }, encapsulation: 2 });
   (function () {
-      (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(AngularFreezeframeComponent, [{
+      (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(AngularFreezeframeComponent, [{
               type: i0.Component,
               args: [{
                       selector: SELECTOR,
@@ -142,11 +161,11 @@
       }
       return AngularFreezeframeModule;
   }());
-  AngularFreezeframeModule.ɵmod = i0.ɵɵdefineNgModule({ type: AngularFreezeframeModule });
-  AngularFreezeframeModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AngularFreezeframeModule_Factory(t) { return new (t || AngularFreezeframeModule)(); }, imports: [[]] });
-  (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(AngularFreezeframeModule, { declarations: [AngularFreezeframeComponent], exports: [AngularFreezeframeComponent] }); })();
+  AngularFreezeframeModule.ɵfac = function AngularFreezeframeModule_Factory(t) { return new (t || AngularFreezeframeModule)(); };
+  AngularFreezeframeModule.ɵmod = /*@__PURE__*/ i0__namespace.ɵɵdefineNgModule({ type: AngularFreezeframeModule });
+  AngularFreezeframeModule.ɵinj = /*@__PURE__*/ i0__namespace.ɵɵdefineInjector({ imports: [[]] });
   (function () {
-      (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(AngularFreezeframeModule, [{
+      (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(AngularFreezeframeModule, [{
               type: i0.NgModule,
               args: [{
                       declarations: [AngularFreezeframeComponent],
@@ -155,6 +174,7 @@
                   }]
           }], null, null);
   })();
+  (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(AngularFreezeframeModule, { declarations: [AngularFreezeframeComponent], exports: [AngularFreezeframeComponent] }); })();
 
   /*
    * Public API Surface of angular-freezeframe
@@ -169,5 +189,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));
 //# sourceMappingURL=angular-freezeframe.umd.js.map

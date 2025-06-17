@@ -25,7 +25,7 @@ export declare class AngularFreezeframeComponent implements AfterViewInit, OnDes
     stop(): void;
     toggle(): void;
     destroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<AngularFreezeframeComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<AngularFreezeframeComponent, "angular-freezeframe", never, { "src": "src"; "options": "options"; }, { "startEvent": "startEvent"; "stopEvent": "stopEvent"; "toggleEvent": "toggleEvent"; }, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<AngularFreezeframeComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<AngularFreezeframeComponent, "angular-freezeframe", never, { "src": "src"; "options": "options"; }, { "startEvent": "startEvent"; "stopEvent": "stopEvent"; "toggleEvent": "toggleEvent"; }, never, ["*"]>;
 }
 //# sourceMappingURL=angular-freezeframe.component.d.ts.map

@@ -8,6 +8,7 @@ const WriteFilePlugin = require('write-file-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const env = require('./utils/env');
+const postcssPresetEnv = require('postcss-preset-env');
 
 const NAME = 'Freezeframe';
 const OUTPUT_FILENAME = NAME.toLowerCase();
@@ -65,16 +66,17 @@ const options = {
           {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss'
-              // plugins: () => [
-              //   postcssPresetEnv({
-              //     stage: 3,
-              //     browsers: [
-              //       'cover 99.5%',
-              //       '> 5%'
-              //     ]
-              //   })
-              // ]
+              postcssOptions: {
+                plugins: [
+                  postcssPresetEnv({
+                    stage: 3,
+                    browsers: [
+                      'cover 99.5%',
+                      '> 5%'
+                    ]
+                  })
+                ]
+              }
             }
           },
           {
