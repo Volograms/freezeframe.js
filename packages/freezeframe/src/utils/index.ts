@@ -20,17 +20,18 @@ export const isTouch = (): boolean => {
   return 'ontouchstart' in window || 'onmsgesturechange' in window;
 };
 
-export const parseFilename = (filePath: string): string => {
+export const parseFilename = (filePath: string, length: number): string => {
   return filePath
     .split('.')
     .pop()
     .toLowerCase()
-    .substring(0, 3);
+    .substring(0, length);
 };
 
 export const validateFilename = (filePath: string): boolean => {
-  const ext = parseFilename(filePath);
-  return ext === 'gif' || ext === 'webp';
+  const extGif = parseFilename(filePath, 3);
+  const extWebp = parseFilename(filePath, 4);
+  return extGif === 'gif' || extWebp === 'webp';
 };
 
 export const normalizeElements = (selectorOrNodes: SelectorOrNodes) => {
