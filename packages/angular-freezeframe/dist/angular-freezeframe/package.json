@@ -1,9 +1,9 @@
 {
-  "name": "angular-freezeframe",
-  "version": "5.0.2",
+  "name": "@volograms/angular-freezeframe",
+  "version": "5.0.4",
   "license": "MIT",
-  "main": "bundles/angular-freezeframe.umd.js",
-  "module": "fesm2015/angular-freezeframe.js",
+  "main": "bundles/volograms-angular-freezeframe.umd.js",
+  "module": "fesm2015/volograms-angular-freezeframe.js",
   "types": "./dist/angular-freezeframe/angular-freezeframe.d.ts",
   "files": [
     "dist/angular-freezeframe"
@@ -26,15 +26,15 @@
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2",
-    "freezeframe": "^5.0.2"
+    "@volograms/freezeframe": "^5.0.4"
   },
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "es2015": "fesm2015/angular-freezeframe.js",
-  "esm2015": "esm2015/angular-freezeframe.js",
-  "fesm2015": "fesm2015/angular-freezeframe.js",
-  "typings": "angular-freezeframe.d.ts",
+  "es2015": "fesm2015/volograms-angular-freezeframe.js",
+  "esm2015": "esm2015/volograms-angular-freezeframe.js",
+  "fesm2015": "fesm2015/volograms-angular-freezeframe.js",
+  "typings": "volograms-angular-freezeframe.d.ts",
   "sideEffects": false,
   "scripts": {
     "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"

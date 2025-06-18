@@ -1,6 +1,6 @@
 import React, { Component, createRef } from 'react';
 import ReactFreezeframe from './components/ReactFreezeframe'
-import { Freeze } from 'freezeframe/types'
+import { Freeze } from '@volograms/freezeframe/types'
 import './Demo.css';
 
 export type State = {

@@ -1,3 +1,3 @@
-import FreezeFrame from 'freezeframe'
+import FreezeFrame from '@volograms/freezeframe'
 
 export default FreezeFrame

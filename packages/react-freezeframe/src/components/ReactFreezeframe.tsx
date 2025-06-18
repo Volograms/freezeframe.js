@@ -1,6 +1,6 @@
 import React, { Component, createRef } from 'react';
-import Freezeframe from 'freezeframe';
-import { FreezeframeOptions, Freeze } from 'freezeframe/types'
+import Freezeframe from '@volograms/freezeframe';
+import { FreezeframeOptions, Freeze } from '@volograms/freezeframe/types'
 
 export type Props = {
   src?: string
