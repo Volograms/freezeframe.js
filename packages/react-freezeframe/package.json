@@ -1,6 +1,6 @@
 {
   "name": "@volograms/react-freezeframe",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "license": "MIT",
   "main": "dist/ReactFreezeframe.js",
   "module": "dist/ReactFreezeframe.js",
@@ -58,7 +58,7 @@
     "@types/node": "^12.20.55",
     "@types/react": "^16.14.65",
     "@types/react-dom": "^16.9.25",
-    "@volograms/freezeframe": "^5.0.4",
+    "@volograms/freezeframe": "^5.0.5",
     "babel-preset-react-app": "^10.1.0",
     "cross-env": "^7.0.3",
     "eslint-config-react-app": "^7.0.1",
